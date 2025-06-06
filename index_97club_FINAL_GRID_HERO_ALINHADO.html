@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>97club</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Gasoek+One&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Gasoek One', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            primary: '#C7F229',
+            secondary: '#8AA626',
+            support: '#768C26',
+            base: '#262626'
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, .font-display {
+      font-family: 'Gasoek One', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-base text-white">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300 ease-in-out" id="site-header">
+<div class="max-w-[1440px] mx-auto px-6 h-16 flex items-center justify-between">
+<div class="hidden md:flex w-1/3 justify-start gap-6">
+<a class="hover:text-primary transition" href="#sobre">Quem sou</a>
+<a class="hover:text-primary transition" href="#projetos">Projetos</a>
+</div>
+<div class="w-1/3 text-center">
+<a class="font-bold text-white text-lg" href="#home">97club</a>
+</div>
+<div class="w-1/3 flex justify-end md:justify-end">
+<a class="text-white" href="#contato">
+<span class="hidden md:inline-block bg-primary text-black px-4 py-2 rounded hover:opacity-80 transition">Fale comigo</span>
+<span class="md:hidden">
+<svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75
+              m19.5 0A2.25 2.25 0 0019.5 4.5H4.5a2.25 2.25 0 00-2.25 2.25
+              m19.5 0v.243a2.25 2.25 0 01-.45 1.35L12 15.75 2.7 8.343a2.25
+              2.25 0 01-.45-1.35V6.75" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</span>
+</a>
+</div>
+</div>
+</header>
+<script>
+  window.addEventListener('scroll', () => {
+    const header = document.getElementById('site-header');
+    if (window.scrollY > 100) {
+      header.classList.add('bg-[#1a1a1acc]', 'border-b', 'backdrop-blur');
+    } else {
+      header.classList.remove('bg-[#1a1a1acc]', 'border-b', 'backdrop-blur');
+    }
+  });
+</script>
+<!-- Hero -->
+<section class="relative h-screen pt-20 flex items-center overflow-hidden" id="home"><div class="max-w-[1440px] mx-auto px-6 z - 1 0">
+<div class="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent z-0"></div>
+<div class="absolute inset-0 bg-support z-[-1]"></div>
+<div class="relative z-10 max-w-4xl">
+<h1 class="text-4xl md:text-6xl font-display">Software designer, founder, and amateur astronaut.</h1>
+<p class="text-lg md:text-xl mt-4 max-w-xl">I’m Spencer, a software designer and entrepreneur based in NYC. I’m the founder and CEO of Planetaria, where we develop technologies that empower people to explore space on their own terms.</p>
+</div>
+</div></section>
+<!-- Quem sou -->
+<section class="py-24 px-6 max-w-[1440px] mx-auto" id="sobre"><div class="max-w-[1400px] mx-auto px-[72px] md:px-6 sm:px-6">
+<div class="items-center gap-8 grid md:grid-cols-2">
+<div>
+<h2 class="text-3xl font-display mb-8">Quem sou</h2>
+<p class="mb-6">Sou um designer e desenvolvedor apaixonado por criar experiências digitais impactantes. Abaixo algumas experiências profissionais:</p>
+<h3 class="text-xl font-semibold text-white mb-6 font-body">Experiência</h3>
+<div class="flex gap-6">
+<div class="flex flex-col items-center gap-2">
+<div class="w-16 h-16 rounded-full bg-primary shadow-lg shadow-black/30"></div>
+<div class="text-sm text-white text-center font-body font-semibold">UI Designer<br/><span class="text-xs text-gray-400 font-normal">2023–Atual</span></div>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-16 h-16 rounded-full bg-primary shadow-lg shadow-black/30"></div>
+<div class="text-sm text-white text-center font-body font-semibold">Dev Frontend<br/><span class="text-xs text-gray-400 font-normal">2021–2023</span></div>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-16 h-16 rounded-full bg-primary shadow-lg shadow-black/30"></div>
+<div class="text-sm text-white text-center font-body font-semibold">Estagiário<br/><span class="text-xs text-gray-400 font-normal">2020–2021</span></div>
+</div>
+</div>
+<a class="inline-block mt-6 bg-primary text-black text-sm px-4 py-2 rounded hover:opacity-80 transition" download="" href="curriculo.pdf" target="_blank">
+           Baixar currículo →
+        </a>
+</div>
+<div class="flex justify-center md:justify-end">
+<div class="w-[20rem] h-[28rem] bg-secondary rounded-xl shadow-lg shadow-black/30"></div>
+</div>
+</div>
+</div></section>
+<!-- Projetos -->
+<section class="py-24 px-6 max-w-[1440px] mx-auto" id="projetos"><div class="max-w-[1400px] mx-auto px-[72px] md:px-6 sm:px-6">
+<h2 class="text-3xl font-display mb-8">Projetos Recentes</h2>
+<div class="gap-8 grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 grid">
+<div class="relative rounded-lg overflow-hidden bg-support shadow-lg shadow-black/30 group">
+<div class="h-60 w-full object-cover bg-[#8AA626]"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+<div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition duration-500">
+<h3 class="font-body font-semibold text-base text-white">Projeto 1</h3>
+<p class="font-body text-sm text-gray-300">Resumo do projeto 1</p>
+</div>
+</div>
+<div class="relative rounded-lg overflow-hidden bg-support shadow-lg shadow-black/30 group">
+<div class="h-60 w-full object-cover bg-[#768C26]"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+<div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition duration-500">
+<h3 class="font-body font-semibold text-base text-white">Projeto 2</h3>
+<p class="font-body text-sm text-gray-300">Resumo do projeto 2</p>
+</div>
+</div>
+<div class="relative rounded-lg overflow-hidden bg-support shadow-lg shadow-black/30 group">
+<div class="h-60 w-full object-cover bg-[#C7F229]"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+<div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition duration-500">
+<h3 class="font-body font-semibold text-base text-white">Projeto 3</h3>
+<p class="font-body text-sm text-gray-300">Resumo do projeto 3</p>
+</div>
+</div>
+</div>
+<div class="mt-8 flex justify-end">
+<a class="text-xs bg-primary text-black px-3 py-1 rounded-md hover:bg-[#d8fc4c] transition" href="https://be.net/pedro-os" target="_blank">ver todos →</a>
+</div>
+</div></section>
+<section class="py-24 px-6 max-w-[1440px] mx-auto" id="contato"><div class="max-w-[1400px] mx-auto px-[72px] md:px-6 sm:px-6">
+<div class="lg:grid-cols-2 gap-8 grid-cols-1 mx-auto max-w-[1440px] items-start grid">
+<div data-aos="fade-right">
+<h2 class="text-3xl font-display text-white mb-4">Vamos conversar?</h2>
+<p class="text-gray-300 text-lg mb-4">Queremos ouvir sua ideia e transformar em algo visualmente poderoso.</p>
+<p class="text-gray-400">Preencha o formulário ou fale com a gente pelas redes sociais.</p>
+</div>
+<div class="bg-[#2a2a2a] p-8 rounded-lg shadow-lg" data-aos="fade-left">
+<form action="https://formsubmit.co/SEUEMAIL@email.com" class="space-y-6" method="POST">
+<input class="w-full px-4 py-2 rounded bg-[#1a1a1a] text-white border border-gray-600" name="name" placeholder="Seu nome" required="" type="text"/>
+<input class="w-full px-4 py-2 rounded bg-[#1a1a1a] text-white border border-gray-600" name="email" placeholder="Seu email" required="" type="email"/>
+<textarea class="w-full px-4 py-2 rounded bg-[#1a1a1a] text-white border border-gray-600" name="message" placeholder="Sua mensagem" required=""></textarea>
+<button class="w-full bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500 transition" type="submit">Enviar</button>
+</form>
+</div>
+</div>
+<footer class="border-t border-gray-700 mt-16 pt-8 text-center">
+<div class="flex justify-center space-x-6 mb-4">
+<a class="text-gray-400 hover:text-white" href="https://instagram.com/97club.art" target="_blank">📷</a>
+<a class="text-gray-400 hover:text-white" href="https://be.net/pedro-os" target="_blank">🅱️</a>
+<a class="text-gray-400 hover:text-white" href="https://linkedin.com/in/pedro-os" target="_blank">🔗</a>
+<a class="text-gray-400 hover:text-white" href="https://discord.com/users/blosstradamus" target="_blank">👾</a>
+</div>
+<p class="text-sm text-gray-500">© 2025 97club. Todos os direitos reservados.</p>
+</footer>
+</div></section>
+<!-- Footer -->
+</body>
+</html>
